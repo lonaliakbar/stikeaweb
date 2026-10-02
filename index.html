@@ -8,13 +8,284 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<link rel="stylesheet" href="./assets/css/style.css">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body data-page="home" data-root="./">
-<div id="site-header"></div>
-<main id="app"><div class="loading">Memuat…</div></main>
-<div id="site-footer"></div>
+
+<!--
+  BERANDA MANUAL
+  File ini ditulis tangan dan TIDAK dibaca dari admin / data/site.json.
+  Ubah teks langsung di sini. Halaman lain (/tentang, /prodi, /berita, /daftar, dst.)
+  tetap diatur lewat /admin/.
+-->
+
+<!-- ===== HEADER ===== -->
+<header class="site" id="siteHeader">
+  <!-- Bar atas: hapus blok ini jika tidak dipakai, atau isi href dengan tautan asli -->
+  <!--
+  <div class="topbar"><div class="wrap">
+    <a href="#" target="_blank" rel="noopener"><i class="fas fa-book"></i> Katalog online</a>
+    <a href="#" target="_blank" rel="noopener"><i class="fas fa-newspaper"></i> E-journal</a>
+    <a href="#" target="_blank" rel="noopener"><i class="fas fa-database"></i> Repository</a>
+    <a href="#" target="_blank" rel="noopener"><i class="fas fa-user-lock"></i> Area anggota</a>
+  </div></div>
+  -->
+  <nav class="main">
+    <a class="logo" href="./" aria-label="Beranda">
+      <span class="logo-top">STIKES</span>
+      <span class="logo-bottom">Medika</span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="tentang/">Tentang</a>
+      <a href="prodi/">Program studi</a>
+      <a href="alumni/">Alumni</a>
+      <a href="galeri/">Galeri</a>
+      <a href="berita/">Berita</a>
+      <a href="kontak/">Kontak</a>
+      <a class="nav-cta-m" href="daftar/">Daftar</a>
+    </div>
+    <a class="nav-cta" href="daftar/">Daftar</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
+  </nav>
+</header>
+
+<main>
+
+<!-- ===== HERO ===== -->
+<section class="hero" style="--hero-img:url('https://assets.siakadcloud.com/uploads/stikesmsb/bgaplikasi/1839.jpg')">
+  <div class="hero-inner">
+    <div class="rule"></div>
+    <div class="eyebrow">Sekolah Tinggi Ilmu Kesehatan</div>
+    <h1>STIKES <em>Medika Seramoe Barat</em></h1>
+    <p>Pendidikan tinggi kesehatan terpercaya di pesisir barat Aceh — membentuk tenaga kesehatan profesional sejak langkah pertama.</p>
+    <div class="btn-row">
+      <a href="daftar/" class="btn-primary">Daftar sekarang</a>
+      <a href="prodi/" class="btn-secondary">Lihat program studi</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STATISTIK (angka murni beranimasi lewat data-target) ===== -->
+<div class="stats">
+  <div class="stat"><div class="num" data-target="6">0</div><div class="label">Program studi</div></div>
+  <div class="stat"><div class="num" data-target="2100">0</div><div class="label">Mahasiswa aktif</div></div>
+  <div class="stat"><div class="num" data-target="3400">0</div><div class="label">Alumni</div></div>
+  <div class="stat"><div class="num">B</div><div class="label">Akreditasi</div></div>
+</div>
+
+<!-- ===== TENTANG ===== -->
+<section class="sec white">
+  <div class="wrap about-grid">
+    <div class="about-visual reveal">
+      <div class="quote">"Kami tidak hanya mendidik lulusan, kami membentuk tenaga kesehatan yang dipercaya masyarakat."</div>
+      <div class="who">Elvina Sari, S.Kep., MKM — Ketua STIKES Medika Seramoe Barat</div>
+    </div>
+    <div class="about-text reveal">
+      <div class="eyebrow">Tentang kampus</div>
+      <h3>Warisan pendidikan kesehatan pesisir barat Aceh</h3>
+      <p>STIKES Medika Seramoe Barat berdiri untuk menjawab kebutuhan tenaga kesehatan profesional di wilayah barat selatan Aceh, dengan kurikulum yang memadukan teori, praktik klinik, dan nilai-nilai keacehan.</p>
+      <ul class="about-list">
+        <li>Terakreditasi resmi oleh lembaga akreditasi nasional</li>
+        <li>Kerja sama praktik klinik dengan rumah sakit dan puskesmas mitra</li>
+        <li>Dosen berpengalaman di bidang kesehatan dan pendidikan</li>
+        <li>Fasilitas laboratorium dan perpustakaan lengkap</li>
+      </ul>
+      <p style="margin-top:18px"><a href="tentang/" style="color:var(--sky-deep);font-weight:600;font-size:13px">Selengkapnya →</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROGRAM STUDI ===== -->
+<section class="sec cream">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Program studi</div>
+      <h2>Pilihan jalur akademik kesehatan</h2>
+      <p>Enam program studi yang dirancang untuk kebutuhan tenaga kesehatan masa depan.</p>
+    </div>
+    <div class="grid3">
+      <div class="prodi-card reveal"><div class="jenjang">S1</div><h3>Keperawatan</h3><p>Membentuk perawat profesional dengan kompetensi klinik dan etika pelayanan tinggi.</p></div>
+      <div class="prodi-card reveal"><div class="jenjang">D3</div><h3>Kebidanan</h3><p>Menyiapkan bidan terampil untuk pelayanan ibu dan anak di fasilitas kesehatan.</p></div>
+      <div class="prodi-card reveal"><div class="jenjang">S1</div><h3>Kesehatan Masyarakat</h3><p>Fokus pada promosi kesehatan dan pencegahan penyakit di tingkat komunitas.</p></div>
+      <div class="prodi-card reveal"><div class="jenjang">D3</div><h3>Farmasi</h3><p>Mendidik tenaga farmasi yang kompeten dalam pelayanan dan pengelolaan obat.</p></div>
+      <div class="prodi-card reveal"><div class="jenjang">S1</div><h3>Gizi</h3><p>Menyiapkan ahli gizi untuk penanganan gizi klinis dan gizi masyarakat.</p></div>
+      <div class="prodi-card reveal"><div class="jenjang">Profesi</div><h3>Ners</h3><p>Program pendidikan profesi lanjutan bagi lulusan S1 Keperawatan.</p></div>
+    </div>
+    <div class="more"><a href="prodi/">Lihat semua program studi →</a></div>
+  </div>
+</section>
+
+<!-- ===== ALUMNI ===== -->
+<section class="sec navy">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Kata alumni</div>
+      <h2>Cerita dari yang sudah menjalani</h2>
+      <p>Pengalaman nyata alumni yang kini bekerja di berbagai fasilitas kesehatan.</p>
+    </div>
+    <div class="grid3">
+      <div class="testi-card reveal">
+        <div class="stars">★★★★★</div>
+        <div class="msg">Pendidikan di sini membentuk saya jadi tenaga kesehatan yang siap kerja dan berintegritas.</div>
+        <div class="name">Yusra Hayati</div>
+        <div class="role">Alumni D3 Kebidanan, 2022 — Bidan Puskesmas Samatiga</div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="stars">★★★★★</div>
+        <div class="msg">Dosen dan fasilitas praktik klinik di kampus ini sangat membantu proses belajar saya.</div>
+        <div class="name">Fadhil Ramadhan</div>
+        <div class="role">Alumni S1 Keperawatan, 2023 — Perawat RSUD Cut Nyak Dhien</div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="stars">★★★★★</div>
+        <div class="msg">Lingkungan belajarnya suportif, dan jaringan alumninya benar-benar membantu saat mencari kerja.</div>
+        <div class="name">Nadia Safitri</div>
+        <div class="role">Alumni S1 Gizi, 2021 — Ahli Gizi Klinik Sehat Barona</div>
+      </div>
+    </div>
+    <div class="more"><a href="alumni/" style="color:var(--gold)">Lihat semua cerita →</a></div>
+  </div>
+</section>
+
+<!-- ===== GALERI ===== -->
+<section class="sec white">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Galeri</div>
+      <h2>Suasana kampus</h2>
+      <p>Sekilas kegiatan akademik dan lingkungan kampus STIKES Medika Seramoe Barat.</p>
+    </div>
+    <div class="galeri-slider">
+      <div class="galeri-track" id="galeriTrack">
+        <img loading="lazy" src="https://assets.siakadcloud.com/uploads/stikesmsb/bgaplikasi/1839.jpg" alt="Gedung kampus STIKES Medika Seramoe Barat">
+        <img loading="lazy" src="https://assets.siakadcloud.com/uploads/stikesmsb/bgaplikasi/1839.jpg" alt="Kegiatan praktik mahasiswa">
+        <img loading="lazy" src="https://assets.siakadcloud.com/uploads/stikesmsb/bgaplikasi/1839.jpg" alt="Ruang kelas kampus">
+        <img loading="lazy" src="https://assets.siakadcloud.com/uploads/stikesmsb/bgaplikasi/1839.jpg" alt="Laboratorium kampus">
+        <img loading="lazy" src="https://assets.siakadcloud.com/uploads/stikesmsb/bgaplikasi/1839.jpg" alt="Wisuda mahasiswa">
+        <img loading="lazy" src="https://assets.siakadcloud.com/uploads/stikesmsb/bgaplikasi/1839.jpg" alt="Kegiatan mahasiswa">
+      </div>
+      <div class="galeri-nav">
+        <button type="button" data-dir="-1" aria-label="Sebelumnya">‹</button>
+        <button type="button" data-dir="1" aria-label="Berikutnya">›</button>
+      </div>
+    </div>
+    <div class="more"><a href="galeri/">Buka galeri →</a></div>
+  </div>
+</section>
+
+<!-- ===== BERITA (tiga terbaru; tautan menuju halaman berita yang diatur admin) ===== -->
+<section class="sec cream">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Berita</div>
+      <h2>Kabar terbaru kampus</h2>
+      <p>Informasi dan agenda terkini dari STIKES Medika Seramoe Barat.</p>
+    </div>
+    <div class="grid3">
+      <a class="berita-card reveal" href="berita/?p=pembukaan-gelombang-pertama-pmb-2027-2026-08-15">
+        <div class="thumb"><img loading="lazy" src="https://assets.siakadcloud.com/uploads/stikesmsb/bgaplikasi/1839.jpg" alt=""></div>
+        <div class="berita-body">
+          <div class="berita-date">15 Agustus 2026</div>
+          <h3>Pembukaan gelombang pertama PMB 2027</h3>
+          <p>Pendaftaran mahasiswa baru tahun akademik 2027 resmi dibuka dengan berbagai jalur seleksi.</p>
+          <span class="baca">Baca selengkapnya →</span>
+        </div>
+      </a>
+      <a class="berita-card reveal" href="berita/?p=kerja-sama-praktik-klinik-dengan-rsud-setempat-2026-08-03">
+        <div class="thumb"><img loading="lazy" src="https://assets.siakadcloud.com/uploads/stikesmsb/bgaplikasi/1839.jpg" alt=""></div>
+        <div class="berita-body">
+          <div class="berita-date">3 Agustus 2026</div>
+          <h3>Kerja sama praktik klinik dengan RSUD setempat</h3>
+          <p>Kampus memperluas jaringan praktik klinik untuk mahasiswa keperawatan dan kebidanan.</p>
+          <span class="baca">Baca selengkapnya →</span>
+        </div>
+      </a>
+      <a class="berita-card reveal" href="berita/?p=wisuda-angkatan-ke-12-2026-07-20">
+        <div class="thumb"><img loading="lazy" src="https://assets.siakadcloud.com/uploads/stikesmsb/bgaplikasi/1839.jpg" alt=""></div>
+        <div class="berita-body">
+          <div class="berita-date">20 Juli 2026</div>
+          <h3>Wisuda angkatan ke-12 STIKES Medika Seramoe Barat</h3>
+          <p>Sebanyak 340 lulusan resmi diwisuda dan siap mengabdi di dunia kesehatan.</p>
+          <span class="baca">Baca selengkapnya →</span>
+        </div>
+      </a>
+    </div>
+    <div class="more"><a href="berita/">Semua berita →</a></div>
+  </div>
+</section>
+
+<!-- ===== PMB (ubah teks ini sesuai kondisi pendaftaran) ===== -->
+<section class="pmb">
+  <div class="wrap">
+    <h2>Informasi pendaftaran mahasiswa baru</h2>
+    <p>Lihat jadwal gelombang, biaya, persyaratan, dan alur pendaftaran terbaru.</p>
+    <a href="daftar/" class="btn-primary">Lihat informasi pendaftaran</a>
+  </div>
+</section>
+
+<!-- ===== KONTAK ===== -->
+<section class="sec white">
+  <div class="wrap kontak-grid">
+    <div class="kontak-info reveal">
+      <div class="eyebrow">Kontak</div>
+      <h3>Hubungi kami</h3>
+      <div class="kontak-row"><div class="k-label">Alamat</div><div>Jl. Industri, Seuneubok, Kec. Johan Pahlawan, Kabupaten Aceh Barat, Aceh 23616</div></div>
+      <div class="kontak-row"><div class="k-label">Telepon</div><div>0651-7551306</div></div>
+      <div class="kontak-row"><div class="k-label">Email</div><div>info@stikesmedikaseramoebarat.ac.id</div></div>
+      <div class="kontak-row"><div class="k-label">Jam layanan</div><div>Senin–Jumat, 08.00–16.00 WIB</div></div>
+    </div>
+    <div class="kontak-map reveal">
+      <iframe src="https://www.google.com/maps?q=STIKES+Medika+Seramoe+Barat,+Jl.+Industri,+Seuneubok,+Kec.+Johan+Pahlawan,+Kabupaten+Aceh+Barat,+Aceh+23616&amp;output=embed"
+        allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Peta lokasi"></iframe>
+      <a class="gmaps" href="https://www.google.com/maps/place/STIKES+Medika+Seramoe+Barat/@4.1618961,96.122136,879m/data=!3m1!1e3!4m6!3m5!1s0x303ec3c16fe3fbb5:0x671482fd47a165b2!8m2!3d4.1616378!4d96.1217485!16s%2Fg%2F1pzqcl9bd" target="_blank" rel="noopener">Buka di Google Maps →</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <div class="logo"><span class="logo-top">STIKES</span><span class="logo-bottom">Medika</span></div>
+      <p>Pendidikan tinggi kesehatan yang mencetak tenaga kesehatan profesional dan terpercaya di pesisir barat Aceh.</p>
+    </div>
+    <div>
+      <h4>Navigasi</h4>
+      <ul>
+        <li><a href="tentang/">Tentang</a></li>
+        <li><a href="prodi/">Program studi</a></li>
+        <li><a href="alumni/">Alumni</a></li>
+        <li><a href="galeri/">Galeri</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Layanan</h4>
+      <ul>
+        <li><a href="daftar/">Pendaftaran</a></li>
+        <li><a href="berita/">Berita</a></li>
+        <li><a href="kontak/">Kontak</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Ikuti kami</h4>
+      <!-- Isi href dengan akun asli, hapus yang tidak dipakai -->
+      <div class="social">
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© 2026 STIKES Medika Seramoe Barat. Semua hak dilindungi.</span>
+    <span>Kabupaten Aceh Barat, Aceh</span>
+  </div>
+</footer>
+
 <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas"><i class="fas fa-chevron-up"></i></button>
-<script src="./assets/js/app.js"></script>
+<script src="assets/js/home.js"></script>
 </body>
 </html>
