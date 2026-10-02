@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<!-- LOKASI FILE: admin/index.html (simpan di folder admin/ dengan nama index.html) -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Admin — STIKES Medika Seramoe Barat</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/admin.css">
+</head>
+<body>
+
+<!-- LOGIN -->
+<div id="login" class="login">
+  <form id="loginForm" class="card login-card" autocomplete="off">
+    <div class="brand"><span class="b1">STIKES</span><span class="b2">Medika</span></div>
+    <h1>Masuk Admin</h1>
+    <p class="muted">Masuk dengan GitHub token untuk mengubah isi situs. Perubahan disimpan sebagai commit ke repo.</p>
+
+    <label>Repo (pemilik/nama-repo)
+      <input id="inRepo" placeholder="username/nama-repo" required>
+    </label>
+    <label>Branch <span class="muted">(kosongkan = branch utama)</span>
+      <input id="inBranch" placeholder="main">
+    </label>
+    <label>GitHub token
+      <input id="inToken" type="password" placeholder="github_pat_…" required autocomplete="off">
+    </label>
+    <label class="check"><input id="inRemember" type="checkbox"> Ingat token di perangkat ini</label>
+    <button class="btn" type="submit" id="loginBtn">Masuk</button>
+    <div id="loginMsg" class="msg" role="alert"></div>
+
+    <details class="help">
+      <summary>Cara membuat token</summary>
+      <ol>
+        <li>GitHub → <b>Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token</b>.</li>
+        <li><b>Repository access</b>: pilih <i>Only select repositories</i> → repo situs ini.</li>
+        <li><b>Permissions → Repository permissions → Contents: Read and write</b>.</li>
+        <li>Atur masa berlaku, buat token, salin, lalu tempel di atas.</li>
+      </ol>
+      <p class="muted">Token hanya disimpan di browser ini (sesi, atau permanen bila “Ingat” dicentang) dan hanya dikirim ke api.github.com. Jangan masukkan token di komputer umum.</p>
+    </details>
+  </form>
+</div>
+
+<!-- APP -->
+<div id="app" class="app" hidden>
+  <header class="bar">
+    <div class="bar-l">
+      <span class="brand sm"><span class="b1">STIKES</span><span class="b2">Medika</span></span>
+      <span id="who" class="muted"></span>
+    </div>
+    <div class="bar-r">
+      <span id="saveState" class="muted"></span>
+      <a id="viewSite" class="btn ghost" href="../" target="_blank" rel="noopener">Lihat situs ↗</a>
+      <button id="saveBtn" class="btn" disabled>Simpan perubahan</button>
+      <button id="logoutBtn" class="btn ghost">Keluar</button>
+    </div>
+  </header>
+  <div class="layout">
+    <aside id="side" class="side"></aside>
+    <main id="main" class="main"></main>
+  </div>
+</div>
+
+<div id="toast" class="toast" role="status"></div>
+<script src="../assets/js/admin.js"></script>
+</body>
+</html>
