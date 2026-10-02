@@ -1,0 +1,120 @@
+{
+  "identitas": {
+    "nama": "STIKES Medika Seramoe Barat",
+    "logoAtas": "STIKES",
+    "logoBawah": "Medika",
+    "deskripsiSingkat": "Pendidikan tinggi kesehatan yang mencetak tenaga kesehatan profesional dan terpercaya di pesisir barat Aceh.",
+    "whatsapp": "",
+    "instagram": "",
+    "facebook": "",
+    "youtube": ""
+  },
+  "topLinks": [
+    { "label": "Katalog online", "url": "", "icon": "fa-book" },
+    { "label": "E-journal", "url": "", "icon": "fa-newspaper" },
+    { "label": "Repository", "url": "", "icon": "fa-database" },
+    { "label": "Area anggota", "url": "", "icon": "fa-user-lock" }
+  ],
+  "hero": {
+    "eyebrow": "Sekolah Tinggi Ilmu Kesehatan",
+    "judul": "STIKES",
+    "judulSorot": "Medika Seramoe Barat",
+    "deskripsi": "Pendidikan tinggi kesehatan terpercaya di pesisir barat Aceh — membentuk tenaga kesehatan profesional sejak langkah pertama.",
+    "gambar": "https://assets.siakadcloud.com/uploads/stikesmsb/bgaplikasi/1839.jpg"
+  },
+  "statistik": [
+    { "angka": "6", "label": "Program studi" },
+    { "angka": "2100", "label": "Mahasiswa aktif" },
+    { "angka": "3400", "label": "Alumni" },
+    { "angka": "B", "label": "Akreditasi" }
+  ],
+  "tentang": {
+    "kutipan": "Kami tidak hanya mendidik lulusan, kami membentuk tenaga kesehatan yang dipercaya masyarakat.",
+    "penutur": "Elvina Sari, S.Kep., MKM — Ketua STIKES Medika Seramoe Barat",
+    "judul": "Warisan pendidikan kesehatan pesisir barat Aceh",
+    "paragraf": "STIKES Medika Seramoe Barat berdiri untuk menjawab kebutuhan tenaga kesehatan profesional di wilayah barat selatan Aceh, dengan kurikulum yang memadukan teori, praktik klinik, dan nilai-nilai keacehan.",
+    "poin": [
+      "Terakreditasi resmi oleh lembaga akreditasi nasional",
+      "Kerja sama praktik klinik dengan rumah sakit dan puskesmas mitra",
+      "Dosen berpengalaman di bidang kesehatan dan pendidikan",
+      "Fasilitas laboratorium dan perpustakaan lengkap"
+    ]
+  },
+  "prodi": [
+    { "jenjang": "S1", "nama": "Keperawatan", "deskripsi": "Membentuk perawat profesional dengan kompetensi klinik dan etika pelayanan tinggi." },
+    { "jenjang": "D3", "nama": "Kebidanan", "deskripsi": "Menyiapkan bidan terampil untuk pelayanan ibu dan anak di fasilitas kesehatan." },
+    { "jenjang": "S1", "nama": "Kesehatan Masyarakat", "deskripsi": "Fokus pada promosi kesehatan dan pencegahan penyakit di tingkat komunitas." },
+    { "jenjang": "D3", "nama": "Farmasi", "deskripsi": "Mendidik tenaga farmasi yang kompeten dalam pelayanan dan pengelolaan obat." },
+    { "jenjang": "S1", "nama": "Gizi", "deskripsi": "Menyiapkan ahli gizi untuk penanganan gizi klinis dan gizi masyarakat." },
+    { "jenjang": "Profesi", "nama": "Ners", "deskripsi": "Program pendidikan profesi lanjutan bagi lulusan S1 Keperawatan." }
+  ],
+  "alumni": [
+    { "nama": "Yusra Hayati", "peran": "Alumni D3 Kebidanan, 2022 — Bidan Puskesmas Samatiga", "testimoni": "Pendidikan di sini membentuk saya jadi tenaga kesehatan yang siap kerja dan berintegritas." },
+    { "nama": "Fadhil Ramadhan", "peran": "Alumni S1 Keperawatan, 2023 — Perawat RSUD Cut Nyak Dhien", "testimoni": "Dosen dan fasilitas praktik klinik di kampus ini sangat membantu proses belajar saya." },
+    { "nama": "Nadia Safitri", "peran": "Alumni S1 Gizi, 2021 — Ahli Gizi Klinik Sehat Barona", "testimoni": "Lingkungan belajarnya suportif, dan jaringan alumninya benar-benar membantu saat mencari kerja." }
+  ],
+  "galeri": [
+    { "url": "https://assets.siakadcloud.com/uploads/stikesmsb/bgaplikasi/1839.jpg", "keterangan": "Gedung kampus STIKES Medika Seramoe Barat" },
+    { "url": "https://assets.siakadcloud.com/uploads/stikesmsb/bgaplikasi/1839.jpg", "keterangan": "Kegiatan praktik mahasiswa" },
+    { "url": "https://assets.siakadcloud.com/uploads/stikesmsb/bgaplikasi/1839.jpg", "keterangan": "Ruang kelas kampus" },
+    { "url": "https://assets.siakadcloud.com/uploads/stikesmsb/bgaplikasi/1839.jpg", "keterangan": "Laboratorium kampus" },
+    { "url": "https://assets.siakadcloud.com/uploads/stikesmsb/bgaplikasi/1839.jpg", "keterangan": "Wisuda mahasiswa" },
+    { "url": "https://assets.siakadcloud.com/uploads/stikesmsb/bgaplikasi/1839.jpg", "keterangan": "Kegiatan mahasiswa" }
+  ],
+  "berita": [
+    {
+      "id": "pembukaan-gelombang-pertama-pmb-2027-2026-08-15",
+      "tanggal": "2026-08-15",
+      "judul": "Pembukaan gelombang pertama PMB 2027",
+      "ringkasan": "Pendaftaran mahasiswa baru tahun akademik 2027 resmi dibuka dengan berbagai jalur seleksi.",
+      "isi": "Pendaftaran mahasiswa baru tahun akademik 2027 resmi dibuka dengan berbagai jalur seleksi.\n\nCalon mahasiswa dapat melihat informasi lengkap, persyaratan, dan alur pendaftaran pada halaman Pendaftaran.",
+      "gambar": "https://assets.siakadcloud.com/uploads/stikesmsb/bgaplikasi/1839.jpg"
+    },
+    {
+      "id": "kerja-sama-praktik-klinik-dengan-rsud-setempat-2026-08-03",
+      "tanggal": "2026-08-03",
+      "judul": "Kerja sama praktik klinik dengan RSUD setempat",
+      "ringkasan": "Kampus memperluas jaringan praktik klinik untuk mahasiswa keperawatan dan kebidanan.",
+      "isi": "Kampus memperluas jaringan praktik klinik untuk mahasiswa keperawatan dan kebidanan.",
+      "gambar": "https://assets.siakadcloud.com/uploads/stikesmsb/bgaplikasi/1839.jpg"
+    },
+    {
+      "id": "wisuda-angkatan-ke-12-2026-07-20",
+      "tanggal": "2026-07-20",
+      "judul": "Wisuda angkatan ke-12 STIKES Medika Seramoe Barat",
+      "ringkasan": "Sebanyak 340 lulusan resmi diwisuda dan siap mengabdi di dunia kesehatan.",
+      "isi": "Sebanyak 340 lulusan resmi diwisuda dan siap mengabdi di dunia kesehatan.",
+      "gambar": "https://assets.siakadcloud.com/uploads/stikesmsb/bgaplikasi/1839.jpg"
+    }
+  ],
+  "pmb": {
+    "judul": "Pendaftaran mahasiswa baru",
+    "deskripsi": "Isi informasi pendaftaran di sini lewat panel admin.",
+    "biaya": "Mulai Rp 150.000",
+    "linkForm": "",
+    "gelombang": [
+      { "nama": "Gelombang 1", "mulai": "", "tutup": "2026-09-30" }
+    ],
+    "syarat": [
+      "Lulusan SMA/SMK/MA atau sederajat",
+      "Fotokopi ijazah/SKL dan rapor",
+      "Fotokopi KTP dan Kartu Keluarga",
+      "Pas foto terbaru"
+    ],
+    "alur": [
+      "Isi formulir pendaftaran",
+      "Unggah berkas persyaratan",
+      "Bayar biaya pendaftaran",
+      "Ikuti seleksi",
+      "Pengumuman dan daftar ulang"
+    ]
+  },
+  "kontak": {
+    "alamat": "Jl. Industri, Seuneubok, Kec. Johan Pahlawan, Kabupaten Aceh Barat, Aceh 23616",
+    "telepon": "0651-7551306",
+    "email": "info@stikesmedikaseramoebarat.ac.id",
+    "jam": "Senin–Jumat, 08.00–16.00 WIB",
+    "mapsEmbed": "https://www.google.com/maps?q=STIKES+Medika+Seramoe+Barat,+Jl.+Industri,+Seuneubok,+Kec.+Johan+Pahlawan,+Kabupaten+Aceh+Barat,+Aceh+23616&output=embed",
+    "mapsLink": "https://www.google.com/maps/place/STIKES+Medika+Seramoe+Barat/@4.1618961,96.122136,879m/data=!3m1!1e3!4m6!3m5!1s0x303ec3c16fe3fbb5:0x671482fd47a165b2!8m2!3d4.1616378!4d96.1217485!16s%2Fg%2F1pzqcl9bd"
+  }
+}
